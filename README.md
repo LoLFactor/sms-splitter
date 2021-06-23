@@ -1,3 +1,13 @@
+<p align="center">
+  <img alt="GitHub" src="https://img.shields.io/github/license/LoLFactor/sms-splitter">
+  <a href="https://travis-ci.com/LoLFactor/sms-splitter">
+    <img src="https://travis-ci.com/LoLFactor/sms-splitter.svg?branch=master" alt="Build status">
+  </a>
+  <a href="https://codecov.io/gh/LoLFactor/sms-splitter">
+    <img src="https://codecov.io/gh/LoLFactor/sms-splitter/branch/master/graph/badge.svg?token=F82NHAZF3B"/>
+  </a>
+</p>
+
 # LOLTECH SMS Splitter
 
 A Typescript library for splitting a message string into parts according to GM specifications.
