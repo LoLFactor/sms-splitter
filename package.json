@@ -26,6 +26,10 @@
   "author": {
     "name": "Vlad Pascu"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LoLFactor/sms-splitter"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.23",
