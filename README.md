@@ -1,4 +1,6 @@
 <p align="center">
+  <img alt="npm type definitions" src="https://img.shields.io/npm/types/@loltech/sms-splitter">
+  <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@loltech/sms-splitter">
   <img alt="GitHub" src="https://img.shields.io/github/license/LoLFactor/sms-splitter">
   <a href="https://travis-ci.com/LoLFactor/sms-splitter">
     <img src="https://travis-ci.com/LoLFactor/sms-splitter.svg?branch=master" alt="Build status">
