@@ -21,7 +21,8 @@
     "test:coverage": "jest --coverage",
     "codecov": "codecov",
     "prepare": "yarn run build",
-    "prepublishOnly": "yarn run test"
+    "prepublishOnly": "yarn run test",
+    "postversion": "git push && git push --tags"
   },
   "author": {
     "name": "Vlad Pascu"
