@@ -1,6 +1,6 @@
 {
   "name": "@loltech/sms-splitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typescript library for splitting strings into SMS messages according to GSM-7 or UCS-2.",
   "keywords": [
     "SMS",
