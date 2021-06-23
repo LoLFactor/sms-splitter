@@ -10,7 +10,8 @@
     "UCS-2"
   ],
   "files": [
-    "/lib/**/*"
+    "/lib/**/*.js",
+    "/lib/**/*.d.ts"
   ],
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -18,7 +19,9 @@
     "build": "tsc",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "codecov": "codecov"
+    "codecov": "codecov",
+    "prepare": "yarn run build",
+    "prepublishOnly": "yarn run test"
   },
   "author": {
     "name": "Vlad Pascu"
