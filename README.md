@@ -12,7 +12,7 @@
 
 # LOLTECH SMS Splitter
 
-A Typescript library for splitting a message string into parts according to GM specifications.
+A Typescript library for splitting a message string into parts according to GSM specifications.
 
 ## Installation
 
@@ -54,8 +54,8 @@ Given a message string, will determine its required encoding and split it into p
 
 #### Return value
 
-If `message` is anything other than a string, it returns `null`. Is `message` is a string, it returns an object of the
-form:
+If `message` is anything other than a `string`, it returns `null`.
+If `message` is a `string`, it returns an object of the form:
 
 ```typescript
 interface ISplitResult {
@@ -74,12 +74,15 @@ interface ISplitResult {
 
 ## Note on behaviour
 
-When splitting SMS messages for transmission, it's best practice not to split up characters. This happens both in
-`GSM-7` (where extended characters are actually made up of two characters) and `UTF-16` (where surrogate pairs are
-employed). This library DOES NOT split characters. While this is
+When splitting SMS messages for transmission, it's best practice to not split up characters.
+This happens both in `GSM-7` (where extended characters are actually made up of two characters) and
+`UTF-16` (where surrogate pairs are employed).
+This library DOES NOT split characters.
+While this is
 [technically correct](https://duckduckgo.com/?q=technically+correct&iax=images&ia=images), it's not the whole story.
 As can be seen in
 [this particular patch comment](https://android.googlesource.com/platform/frameworks/opt/telephony/+/e472090%5E!/), some
-carries cannot handle messages split within character boundaries. Unfortunately the only possible solution I found will
+carries cannot handle messages split within character boundaries.
+Unfortunately the only possible solution I found will
 be to use `Intl.breakItreator`, but that feature hasn't been
 [standardized or implemented yet](https://github.com/tc39/ecma402/issues/60).
