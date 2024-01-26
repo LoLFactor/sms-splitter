@@ -9,7 +9,7 @@ const LOWERCASE_LATIN = 'èéùìòøåæßäöñüà';
 const UPPERCASE_LATIN = 'ÇØÅÆÉÄÖÑÜ';
 
 const GREEK = 'ΔΦΓΛΩΠΨΣΘΞ';
-const SYMBOLS = '@£$¥_!"#¤%&\'()*+,-./:;<=>?¡¿';
+const SYMBOLS = '@£$¥_!"#¤%&\'()*+,-./:;<=>?¡¿§';
 const CONTROL = '\n\r ';
 
 export const SIMPLE_ALPHABET =
